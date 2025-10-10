@@ -60,5 +60,4 @@ jobs:
           file: docker/Dockerfile
           push: true
           platforms: linux/amd64
-          labels: ${{steps.metadata.outputs.labels}}
           tags: ${{ env.DOCKER_HUB_NAMESPACE }}/${{ env.DOCKER_HUB_IMAGE_NAME }}:${{ github.event.inputs.tag || env.RC_TAG }}
