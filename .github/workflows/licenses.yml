@@ -21,7 +21,6 @@ jobs:
       - name: Delete Maven Wrappers
         run: |
           rm mvnw
-          rm mvnw.cmd
       - name: Get Repository License
         id: license
         run: |
